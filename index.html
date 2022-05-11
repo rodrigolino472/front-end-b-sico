@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="stylesheet" href="./css/estilo.css">
+  <title>Ementa</title>
+</head>
+<body class="flex-vertical">
+  <div class="container">
+    <!--Inicio do cabeçalho-->
+    <header id="cabecalho" class="flex-horizontal">
+      <a id="logo" href="https://ifce.edu.br/maracanau"><img src="./imagens/ifce.png" alt="logo ifce"></a>
+      <div id="hamburguer" class="nav-item">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="nav-menu-principal flex-horizontal">
+        <li class="nav-item"><a class="obj" href="#objetivo">objetivo</a></li>
+        <li class="nav-item"><a class="html" href="#html">html</a></li>
+        <li class="nav-item"><a class="css" href="#css">css</a></li>
+        <li class="nav-item"><a class="js" href="#js">javascript</a></li>
+        
+      </ul>
+    </header>
+    <!--Inicio do conteúdo principal-->
+    <main id="principal">
+      <!--sessao objetivo-->
+      <h1 class="curso">front end básico e lógica de programação</h1>
+      <img id="capa" src="./imagens/html-css-javascript.jpg" alt="trio web">
+      <section id="objetivo" class="sessao flex-vertical">
+        <h2>objetivo</h2>
+        <p>
+          Esse curso tem como objetivo ensinar o desenvolvimento web front end(básico/intermediário), bem como lógica de programação. Ao término do curso o aluno será capaz de criar landing pages com formulários de contato, além de uma boa base para seguir com os estudos do desenvolvimento, seja ele web ou não, já que a lógica de programação no módulo js(javascript) é pré requisito básico para toda e qualquer área do desenvolvimento.
+        </p>
+      </section>
+      <!--sessao html-->
+      <section id="html" class="sessao flex-horizontal">
+        <h2>html</h2>
+        <div class="item-sessao">
+          <img src="./imagens/html.png" alt="logo html">
+        </div>
+        <div class="item-sessao">
+          <ul class="lista-sessao">
+            <li><h3>html básico</h3></li>
+            <li><p>apresentação do curso front end x back end html css javascript papel de cada linguagem</p></li>
+            <li>
+              <p>apresentando as ferramentas necessárias para o curso (navegador, interpretador/ide)</p>
+            </li>
+            <li>
+              <p>estrutura básica de uma página html e como fazer comentários</p>
+            </li>
+            <li>
+              <p>titulos e parágrafos</p>
+            </li>
+            <li>
+              <p>tags de formatação/auxiliares (em, strong, hr, br, sub, sup, ins, small, mark)</p>
+            </li>
+            <li>
+              <p>links</p>
+            </li>
+            <li>
+              <p>listas</p>
+            </li>
+            <li>
+              <p>projeto 1</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--sessao css-->
+      <section id="css" class="sessao flex-horizontal">
+        <h2>css</h2>
+        <div class="flex-horizontal resp">
+          <div class="item-sessao">
+            <ul class="lista-sessao">
+              <li><h3>css básico</h3></li>
+              <li><p>css inline/interno/externo</p></li>
+              <li><p>classes e ids</p></li>
+              <li><p>cores</p></li>
+              <li><p>background</p></li>
+              <li><p>divs</p></li>
+              <li><p>unidades de medida</p></li>
+              <li><p>bordas/padding/margin e box model</p></li>
+              <li><p>formatação de texto/fontes</p></li>
+              <li><p>projeto 2</p></li>
+            </ul>
+          </div>
+          <div class="item-sessao">
+            <img src="./imagens/css3.png" alt="logo css">
+          </div>
+        </div>
+        <!--
+        <div class="item-sessao">
+          <ul class="lista-sessao">
+            <li><h3>css básico</h3></li>
+            <li><p>css inline/interno/externo</p></li>
+            <li><p>classes e ids</p></li>
+            <li><p>cores</p></li>
+            <li><p>background</p></li>
+            <li><p>divs</p></li>
+            <li><p>unidades de medida</p></li>
+            <li><p>bordas/padding/margin e box model</p></li>
+            <li><p>formatação de texto/fontes</p></li>
+            <li><p>projeto 2</p></li>
+          </ul>
+        </div>
+        <div class="item-sessao">
+          <img src="./imagens/css3.png" alt="logo css">
+        </div>
+      -->
+      </section>
+      <!--sessao javascript-->
+      <section id="js" class="sessao flex-horizontal">
+        <h2>javascript</h2>
+        <div class="item-sessao"><img src="./imagens/JavaScript_logo_PNG1.png" alt="logo javascript"></div>
+        <div class="item-sessao">
+          <ul class="lista-sessao">
+            <li><h2>javascript básico</h2></li>
+            <li><p class="sp">Tipos de dados e debuggar</p>
+            <p>number, null, undefined, number,string, symbol, object </p></li>
+            <li><p class="sp">number
+            </p><p>Breve introdução a Math</p></li>
+            <li><p class="sp">string
+            </p><p>funções built in e codigos</p><p>eval()</p></li>
+            <li><p class="sp">boolean e logica basica
+            </p><p>true,false</p><p>new Boolean()</p><p>false-0,null,''</p><p>true-'true','false',[],{}</p></li>
+            <li><p class="sp">variáveis ( var e let )
+            </p></li>
+          </ul>
+        </div>
+      </section>
+      <section id="exercicios" class="sessao flex-horizontal">
+        <div class="exercicio flex-vertical">
+          <h2>exercicios n1</h2>
+          <ul class="lista-sessao">
+            <li><p>Math e outras built in</p></li>
+            <li>
+              <p>estruturas de condição (if,else,else if, ternário, integrando com lógica)</p>
+            </li>
+            <li>
+              <p>estruturas de condição II (switch)</p>
+            </li>
+            <li>
+              <p>estruturas de repetição I(while,do while)</p>
+            </li>
+            <li>
+              <p>esttruturas de repetição II(for,break)
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="exercicio flex-vertical">
+          <h2>exercicios n2</h2>
+          <ul class="lista-sessao">
+            <li><p>funções I (arrow, anonimas, IIFE etc)</p></li>
+            <li><p>funções II (parametros, e parametros default)</p></li>
+            <li><p>arrays I(definiÁ„o e metodos nativos)</p>
+            </li>
+            <li><p>arraysII(manipulação)</p>
+            </li>
+            <li><p>objetos I(definição e métodos)</p>
+            </li>
+            <li><p>objetos II (manipulação)</p>
+            </li>
+          </ul>
+        </div>
+        <div class="exercicio flex-vertical">
+          <h2>exercicios n3</h2>
+          <ul class="lista-sessao">
+            <li><p>Introdução a POO(definições)
+            </p></li>
+            <li><p>POO (classes,constructor)
+            </p></li>
+            <li><p>POO (getters e setters)
+            </p>
+            </li>
+            <li><p>POO (Herança)</p>
+            </li>
+            <li><p>Programação assincrona</p>
+            </li>
+            <li><p>Introdução ao tratamento de erros (exception, try catch,finaly)</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="acesso" class="sessao flex-horizontal">
+        <h2><a href="https://rodrigolino472.github.io/Formularios/">receber acesso</a></h2>
+      </section>
+    </main>
+    <!--sessao rodapé-->
+    <footer id="rodape">rodape</footer>
+  </div>
+</body>
+<script src="./js/script.js"></script>
+</html>

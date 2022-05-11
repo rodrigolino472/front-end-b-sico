@@ -1,0 +1,313 @@
+/*configurações gerais*/
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+ul *{
+  transition: all .125s ease-in;
+}
+h2, h3{
+  color: white;
+  text-transform: uppercase;
+  border-radius: .4rem;
+  background: #040404;
+  width: 100%;
+  text-align: center;
+  margin: .5rem 0;
+}
+a{
+  color: #bab9b9;
+  text-transform: uppercase;
+}
+p{
+  font-size: 1.1rem;
+  letter-spacing: .05rem;
+  margin: 0 .5rem;
+  max-width: 100%;
+}
+body{
+  width: 100vw;
+  overflow-x: hidden;
+}
+.container{
+  width: 100%;
+}
+#capa{
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+.flex-horizontal{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flex-vertical{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.curso{
+  text-align: center;
+  padding: 1rem 0;
+  text-transform: capitalize;
+  text-shadow: 0 0 1rem #000;
+  color: white;
+}
+/*configurações de cabeçalho*/
+#cabecalho{
+  position: fixed;
+  width: 100%;
+  height: 4rem;
+  background: #040404;
+  box-shadow: 0 0 .7rem #4b4b4b;
+}
+#cabecalho a, #cabecalho img{
+  height: 100%;
+}
+.nav-menu-principal{
+  padding: .5rem;
+  transition: all .3s;
+}
+/*hamburguer*/
+#hamburguer{
+  opacity: 0;
+  cursor: pointer;
+  padding: .5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+}
+#hamburguer div{
+  background-color: white;
+  margin: 0 0 .3rem 0;
+  width: 1.8rem;
+  height: .125rem;
+}
+.nav-item{
+  margin-left: 1.5rem;
+  border-radius: .3rem;
+}
+.nav-item a{
+  border-radius: .3rem;
+  padding: .8rem;
+  height: 100%;
+}
+.nav-item a:hover{
+  color: white;
+}
+
+/*configurações gerais de conteúdo principal*/
+#principal{
+  margin-top: 4rem;
+}
+.sessao{
+  margin: 1rem auto;
+  width: 80%;
+}
+.sessao img{
+  width: 80%;
+}
+.item-sessao{
+  width: 50%;
+}
+.item-sessao li{
+  border-radius: .3rem;
+}
+#html p, #css p, #js p{
+  background-color: white;
+  margin: 0;
+  padding: .3rem .5rem;
+  /*padding: 0;*/
+}
+#html p:hover, #css p:hover, #js p:hover{
+  margin-left: .5rem;
+}
+#exercicios .lista-sessao, #js .lista-sessao{
+  padding: 0 .8rem;
+}
+/*sessao objetivo*/
+#objetivo h2, .obj:hover{
+  background: #2c9434;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #349434, #2c9434);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #349434, #2c9434); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#objetivo p{
+  margin-top: .5rem;
+  text-align: center;
+}
+/*sessao html*/
+#html h2, #html h3, .html:hover, #html li{
+  background: #ee5424;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ed8235, #ee5424);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ed8235, #ee5424); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+/*sessao css*/
+#css h2, #css h3, .css:hover, #css li{
+  background: #047ac0;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4ca4d4, #047ac0);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4ca4d4, #047ac0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/*sessao javascript*/
+#js h2, #js h3, .js:hover, #js li, #exercicios h2{
+  background: #e4a424;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f3bc25, #e4a424);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f3bc25, #e4a424); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#js li{
+  margin-top: .8rem;
+}
+.sp{
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-bottom: 1px solid #e4a424;
+  padding-left: .8rem;
+}
+#js img{
+  width: 100%;
+}
+
+/*exercicios*/
+#exercicios{
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.exercicio{
+  width: 32%;
+  margin: .5rem .2rem;
+  padding: .3rem;
+}
+.exercicio h2{
+  margin: 0;
+}
+.exercicio:hover{
+  box-shadow: 0 0 .5rem #e4a424;
+}
+.exercicio li{
+  margin-top: .8rem;
+  border-bottom: 2px solid transparent;
+}
+.exercicio li:hover{
+  border-bottom: 2px solid #e4a424;
+}
+
+#objetivo *::selection{
+  color: white;
+  background: #2c9434;
+}
+#html *::selection{
+  color: white;
+  background: #ee5424;
+}
+#css *::selection{
+  color: white;
+  background: #047ac0;
+}
+#js *::selection, #exercicios *::selection{
+  color: white;
+  background: #e4a424;
+}
+/*acesso*/
+#acesso h2 a{
+  color: white;
+  background: #2c9434;
+  display: block;
+  padding: 1rem 0;
+  box-shadow: 0 0 .5rem #000;
+}
+
+/*responsividade*/
+@media (max-width: 900px){
+  #exercicios{
+    flex-direction: column;
+  }
+  .exercicio{
+    margin: 0 auto;
+    align-items: center;
+    width: 80%;
+  }
+  .exercicio ul{
+    width: 100%;
+  }
+}
+/*menu*/
+@media (max-width: 768px){
+  h1{
+    margin: .5rem .8rem;
+    font-size: 1.5rem;
+  }
+  #cabecalho{
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .nav-menu-principal{
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 2rem;
+    background: #000;
+    opacity: .8;
+    width: 70%;
+    height: 100vh;
+    transform: translateX(100vw);
+  }
+  #hamburguer{
+    opacity: 1;
+    z-index: 1000;
+  }
+  .sessao{
+    flex-direction: column;
+  }
+  #css div *{
+    width: 100%;
+  }
+  .sessao div{
+    width: 80%;
+    text-align: center;
+  }
+  .sessao div p{
+    text-align: start;
+  }
+  #css .sessao .resp div ul{
+    width: 100%;
+  }
+  .resp{
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 644px){
+  body{
+    overflow-x: scroll;
+  }
+  .container{
+    min-width: 280px;
+  }
+  .nav-menu-principal{
+    width: 100%;
+  }
+  .sessao div{
+    width: 100%;
+    margin-bottom: .8rem;
+  }
+}
+@media (max-width: 260px){
+  #logo{
+    display: none;
+  }
+  #cabecalho a{
+    font-size: 1.2rem;
+  }
+}
+.show-menu{
+  transform: translateX(0);
+  right: 0;
+}
